@@ -1,0 +1,15 @@
+# Ignore user shell and editor files
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.lesshst
+.viminfo
+.gitconfig
+
+# Ignore SSH keys (important!)
+.ssh/
+
+# Ignore temp/cache folders
+.ansible/tmp/
+.docker/
