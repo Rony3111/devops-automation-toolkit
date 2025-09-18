@@ -1,0 +1,156 @@
+---
+- name: Deploy services using Docker
+  hosts: all
+  become: yes  # Escalate privileges to run docker commands
+
+
+  vars:
+    db_env:
+      MYSQL_ROOT_PASSWORD: 12shroot
+      MYSQL_USER: toolkit
+      MYSQL_PASSWORD: 12shsql
+      MYSQL_DATABASE: toolkit_db
+      RABBITMQ_DEFAULT_USER: rabbit
+      RABBITMQ_DEFAULT_PASS: 12shrab
+    volumes:
+      mariadb: /var/lib/mysql
+      rabbitmq: /var/lib/rabbitmq
+      memcached: /var/lib/memcached
+  
+  tasks:
+
+    - name: Ensure python3-pip is installed
+      yum:
+        name: python3-pip
+        state: present
+      become: yes
+
+    - name: Install requests Python module
+      pip:
+        name: requests
+        executable: pip3
+      become: yes
+
+    - name: Ensure a compatible version of requests (<2.32.0)
+      pip:
+        name: "requests<2.32.0"
+        executable: pip3
+        state: present
+      become: yes
+
+    - name: Ensure latest Docker SDK for Python is installed
+      pip:
+        name: docker
+        executable: pip3
+        state: latest
+      become: yes
+        
+    - name: Install Docker SDK for Python
+      pip:
+        name: docker
+        executable: pip3
+      become: yes
+
+    - name: Install EPEL and Ansible (RHEL/CentOS)
+      when: ansible_os_family == "RedHat"
+      become: yes
+      block:
+        - name: Install EPEL
+          yum:
+            name: epel-release
+            state: present
+
+        - name: Install Ansible
+          yum:
+            name: ansible
+            state: present
+    - name: Copy Docker build context to remote host
+      copy:
+        src: /home/devops/scripts/docker_build
+        dest: /tmp/mysql_dump_hltck_docker
+      become: yes
+
+
+    - name: Build custom MariaDB image with healthcheck
+      docker_image:
+        name: ronystark/mysqldump_hlt_chk_img
+        tag: latest
+        source: build
+        build:
+          path: "/tmp/mysql_dump_hltck_docker/docker_build"
+      become: yes
+          
+
+    - name: Pull Docker images
+      docker_image:
+        name: "{{ item }}"
+        source: pull
+      loop:
+        - httpd
+        - nginx
+        - mariadb
+        - rabbitmq
+        - memcached
+
+    - name: Run web containers (httpd and nginx)
+      when: "'web' in group_names"
+      docker_container:
+        name: "{{ item.name }}"
+        image: "{{ item.image }}"
+        ports:
+          - "{{ item.port }}:80"
+        restart_policy: always
+      loop:
+        - { name: 'httpd_server', image: 'httpd', port: 8080 }
+        - { name: 'nginx_server', image: 'nginx', port: 8081 }
+
+    - name: Run database/messaging containers
+      when: "'db' in group_names"
+      docker_container:
+        name: "{{ item.name }}"
+        image: "{{ item.image }}"
+        env: "{{ item.env }}"
+        volumes:
+          - "{{ item.volume }}:{{ item.container_volume }}"
+        ports:
+          - "{{ item.port }}:{{ item.container_port }}"
+        restart_policy: always
+
+      loop:
+        - {
+            name: 'mariadb_server',
+            image: 'ronystark/mysqldump_hlt_chk_img:latest',
+            env: {
+              MYSQL_ROOT_PASSWORD: "{{ db_env.MYSQL_ROOT_PASSWORD }}",
+              MYSQL_DATABASE: "{{ db_env.MYSQL_DATABASE }}",
+              MYSQL_USER: "{{ db_env.MYSQL_USER }}",
+              MYSQL_PASSWORD: "{{ db_env.MYSQL_PASSWORD }}"
+            },
+            volume: '/opt/mariadb_data',
+            container_volume: '/var/lib/mysql',
+            port: 3306,
+            container_port: 3306
+          }
+
+        
+        - {
+            name: 'rabbitmq_server',
+            image: 'rabbitmq',
+            env: {
+              RABBITMQ_DEFAULT_USER: "{{ db_env.RABBITMQ_DEFAULT_USER }}",
+              RABBITMQ_DEFAULT_PASS: "{{ db_env.RABBITMQ_DEFAULT_PASS }}"
+            },
+            volume: '/opt/rabbitmq_data',
+            container_volume: '/var/lib/rabbitmq',
+            port: 5672,
+            container_port: 5672
+          }
+        - {
+            name: 'memcached_server',
+            image: 'memcached',
+            env: {},
+            volume: '/opt/memcached_data',
+            container_volume: '/var/lib/memcached',
+            port: 11211,
+            container_port: 11211
+          }     
