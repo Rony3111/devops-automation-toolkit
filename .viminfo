@@ -12,7 +12,7 @@
 ~H
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1758161511,,"wq!"
+|2,0,1758165748,,"wq!"
 :q!
 |2,0,1758161382,,"q!"
 :se nu
@@ -59,38 +59,58 @@
 |3,0,36,0,1,0,1758132465,"\""
 
 # File marks:
-'0  30  3  ~/scripts/log_rotation.sh
-|4,48,30,3,1758161511,"~/scripts/log_rotation.sh"
-'1  31  16  ~/scripts/log_rotation.sh
-|4,49,31,16,1758161451,"~/scripts/log_rotation.sh"
+'0  1  0  ~/.git/MERGE_MSG
+|4,48,1,0,1758165748,"~/.git/MERGE_MSG"
+'1  30  3  ~/scripts/log_rotation.sh
+|4,49,30,3,1758161511,"~/scripts/log_rotation.sh"
 '2  31  16  ~/scripts/log_rotation.sh
 |4,50,31,16,1758161451,"~/scripts/log_rotation.sh"
-'3  1  0  /var/log/archive/maillog/log_rotation.sh
-|4,51,1,0,1758161382,"/var/log/archive/maillog/log_rotation.sh"
-'4  39  23  ~/scripts/log_rotation.sh
-|4,52,39,23,1758160934,"~/scripts/log_rotation.sh"
-'5  38  23  ~/scripts/log_rotation.sh
-|4,53,38,23,1758160934,"~/scripts/log_rotation.sh"
-'6  40  23  ~/scripts/log_rotation.sh
-|4,54,40,23,1758160934,"~/scripts/log_rotation.sh"
-'7  39  23  ~/scripts/log_rotation.sh
-|4,55,39,23,1758160934,"~/scripts/log_rotation.sh"
-'8  25  26  ~/scripts/log_rotation.sh
-|4,56,25,26,1758160643,"~/scripts/log_rotation.sh"
-'9  23  26  ~/scripts/log_rotation.sh
-|4,57,23,26,1758160643,"~/scripts/log_rotation.sh"
+'3  31  16  ~/scripts/log_rotation.sh
+|4,51,31,16,1758161451,"~/scripts/log_rotation.sh"
+'4  1  0  /var/log/archive/maillog/log_rotation.sh
+|4,52,1,0,1758161382,"/var/log/archive/maillog/log_rotation.sh"
+'5  39  23  ~/scripts/log_rotation.sh
+|4,53,39,23,1758160934,"~/scripts/log_rotation.sh"
+'6  38  23  ~/scripts/log_rotation.sh
+|4,54,38,23,1758160934,"~/scripts/log_rotation.sh"
+'7  40  23  ~/scripts/log_rotation.sh
+|4,55,40,23,1758160934,"~/scripts/log_rotation.sh"
+'8  39  23  ~/scripts/log_rotation.sh
+|4,56,39,23,1758160934,"~/scripts/log_rotation.sh"
+'9  25  26  ~/scripts/log_rotation.sh
+|4,57,25,26,1758160643,"~/scripts/log_rotation.sh"
 
 # Jumplist (newest first):
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1758165748,"~/.git/MERGE_MSG"
+-'  30  3  ~/scripts/log_rotation.sh
+|4,39,30,3,1758161511,"~/scripts/log_rotation.sh"
 -'  30  3  ~/scripts/log_rotation.sh
 |4,39,30,3,1758161511,"~/scripts/log_rotation.sh"
 -'  31  16  ~/scripts/log_rotation.sh
 |4,39,31,16,1758161492,"~/scripts/log_rotation.sh"
+-'  31  16  ~/scripts/log_rotation.sh
+|4,39,31,16,1758161492,"~/scripts/log_rotation.sh"
+-'  31  16  ~/scripts/log_rotation.sh
+|4,39,31,16,1758161451,"~/scripts/log_rotation.sh"
 -'  31  16  ~/scripts/log_rotation.sh
 |4,39,31,16,1758161451,"~/scripts/log_rotation.sh"
 -'  39  23  ~/scripts/log_rotation.sh
 |4,39,39,23,1758161397,"~/scripts/log_rotation.sh"
 -'  40  23  ~/scripts/log_rotation.sh
 |4,39,40,23,1758161397,"~/scripts/log_rotation.sh"
+-'  39  23  ~/scripts/log_rotation.sh
+|4,39,39,23,1758161397,"~/scripts/log_rotation.sh"
+-'  40  23  ~/scripts/log_rotation.sh
+|4,39,40,23,1758161397,"~/scripts/log_rotation.sh"
+-'  1  0  /var/log/archive/maillog/log_rotation.sh
+|4,39,1,0,1758161382,"/var/log/archive/maillog/log_rotation.sh"
+-'  1  0  /var/log/archive/maillog/log_rotation.sh
+|4,39,1,0,1758161382,"/var/log/archive/maillog/log_rotation.sh"
+-'  1  0  /var/log/archive/maillog/log_rotation.sh
+|4,39,1,0,1758161382,"/var/log/archive/maillog/log_rotation.sh"
+-'  1  0  /var/log/archive/maillog/log_rotation.sh
+|4,39,1,0,1758161382,"/var/log/archive/maillog/log_rotation.sh"
 -'  1  0  /var/log/archive/maillog/log_rotation.sh
 |4,39,1,0,1758161382,"/var/log/archive/maillog/log_rotation.sh"
 -'  1  0  /var/log/archive/maillog/log_rotation.sh
@@ -105,6 +125,20 @@
 |4,39,39,23,1758160934,"~/scripts/log_rotation.sh"
 -'  39  23  ~/scripts/log_rotation.sh
 |4,39,39,23,1758160934,"~/scripts/log_rotation.sh"
+-'  38  23  ~/scripts/log_rotation.sh
+|4,39,38,23,1758160934,"~/scripts/log_rotation.sh"
+-'  39  23  ~/scripts/log_rotation.sh
+|4,39,39,23,1758160934,"~/scripts/log_rotation.sh"
+-'  39  23  ~/scripts/log_rotation.sh
+|4,39,39,23,1758160934,"~/scripts/log_rotation.sh"
+-'  25  26  ~/scripts/log_rotation.sh
+|4,39,25,26,1758160750,"~/scripts/log_rotation.sh"
+-'  25  26  ~/scripts/log_rotation.sh
+|4,39,25,26,1758160750,"~/scripts/log_rotation.sh"
+-'  25  26  ~/scripts/log_rotation.sh
+|4,39,25,26,1758160750,"~/scripts/log_rotation.sh"
+-'  25  26  ~/scripts/log_rotation.sh
+|4,39,25,26,1758160750,"~/scripts/log_rotation.sh"
 -'  25  26  ~/scripts/log_rotation.sh
 |4,39,25,26,1758160750,"~/scripts/log_rotation.sh"
 -'  25  26  ~/scripts/log_rotation.sh
@@ -121,6 +155,18 @@
 |4,39,23,26,1758160643,"~/scripts/log_rotation.sh"
 -'  23  26  ~/scripts/log_rotation.sh
 |4,39,23,26,1758160643,"~/scripts/log_rotation.sh"
+-'  23  26  ~/scripts/log_rotation.sh
+|4,39,23,26,1758160643,"~/scripts/log_rotation.sh"
+-'  23  26  ~/scripts/log_rotation.sh
+|4,39,23,26,1758160643,"~/scripts/log_rotation.sh"
+-'  23  26  ~/scripts/log_rotation.sh
+|4,39,23,26,1758160643,"~/scripts/log_rotation.sh"
+-'  23  26  ~/scripts/log_rotation.sh
+|4,39,23,26,1758160643,"~/scripts/log_rotation.sh"
+-'  23  34  ~/scripts/log_rotation.sh
+|4,39,23,34,1758160081,"~/scripts/log_rotation.sh"
+-'  23  34  ~/scripts/log_rotation.sh
+|4,39,23,34,1758160081,"~/scripts/log_rotation.sh"
 -'  23  34  ~/scripts/log_rotation.sh
 |4,39,23,34,1758160081,"~/scripts/log_rotation.sh"
 -'  23  34  ~/scripts/log_rotation.sh
@@ -142,9 +188,59 @@
 -'  3  0  ~/scripts/log_rotation.sh
 |4,39,3,0,1758159888,"~/scripts/log_rotation.sh"
 -'  3  0  ~/scripts/log_rotation.sh
+|4,39,3,0,1758159888,"~/scripts/log_rotation.sh"
+-'  3  0  ~/scripts/log_rotation.sh
+|4,39,3,0,1758159888,"~/scripts/log_rotation.sh"
+-'  3  0  ~/scripts/log_rotation.sh
+|4,39,3,0,1758159888,"~/scripts/log_rotation.sh"
+-'  3  0  ~/scripts/log_rotation.sh
+|4,39,3,0,1758159888,"~/scripts/log_rotation.sh"
+-'  3  0  ~/scripts/log_rotation.sh
+|4,39,3,0,1758159888,"~/scripts/log_rotation.sh"
+-'  3  0  ~/scripts/log_rotation.sh
+|4,39,3,0,1758159888,"~/scripts/log_rotation.sh"
+-'  3  0  ~/scripts/log_rotation.sh
+|4,39,3,0,1758159888,"~/scripts/log_rotation.sh"
+-'  3  0  ~/scripts/log_rotation.sh
+|4,39,3,0,1758159888,"~/scripts/log_rotation.sh"
+-'  3  0  ~/scripts/log_rotation.sh
 |4,39,3,0,1758159732,"~/scripts/log_rotation.sh"
 -'  3  0  ~/scripts/log_rotation.sh
 |4,39,3,0,1758159732,"~/scripts/log_rotation.sh"
+-'  3  0  ~/scripts/log_rotation.sh
+|4,39,3,0,1758159732,"~/scripts/log_rotation.sh"
+-'  3  0  ~/scripts/log_rotation.sh
+|4,39,3,0,1758159732,"~/scripts/log_rotation.sh"
+-'  32  12  ~/scripts/log_rotation.sh
+|4,39,32,12,1758159722,"~/scripts/log_rotation.sh"
+-'  37  12  ~/scripts/log_rotation.sh
+|4,39,37,12,1758159722,"~/scripts/log_rotation.sh"
+-'  39  12  ~/scripts/log_rotation.sh
+|4,39,39,12,1758159722,"~/scripts/log_rotation.sh"
+-'  33  12  ~/scripts/log_rotation.sh
+|4,39,33,12,1758159722,"~/scripts/log_rotation.sh"
+-'  32  12  ~/scripts/log_rotation.sh
+|4,39,32,12,1758159722,"~/scripts/log_rotation.sh"
+-'  38  12  ~/scripts/log_rotation.sh
+|4,39,38,12,1758159722,"~/scripts/log_rotation.sh"
+-'  32  12  ~/scripts/log_rotation.sh
+|4,39,32,12,1758159722,"~/scripts/log_rotation.sh"
+-'  31  12  ~/scripts/log_rotation.sh
+|4,39,31,12,1758159722,"~/scripts/log_rotation.sh"
+-'  32  12  ~/scripts/log_rotation.sh
+|4,39,32,12,1758159722,"~/scripts/log_rotation.sh"
+-'  31  12  ~/scripts/log_rotation.sh
+|4,39,31,12,1758159722,"~/scripts/log_rotation.sh"
+-'  38  12  ~/scripts/log_rotation.sh
+|4,39,38,12,1758159722,"~/scripts/log_rotation.sh"
+-'  32  12  ~/scripts/log_rotation.sh
+|4,39,32,12,1758159722,"~/scripts/log_rotation.sh"
+-'  31  12  ~/scripts/log_rotation.sh
+|4,39,31,12,1758159722,"~/scripts/log_rotation.sh"
+-'  32  12  ~/scripts/log_rotation.sh
+|4,39,32,12,1758159722,"~/scripts/log_rotation.sh"
+-'  31  12  ~/scripts/log_rotation.sh
+|4,39,31,12,1758159722,"~/scripts/log_rotation.sh"
 -'  32  12  ~/scripts/log_rotation.sh
 |4,39,32,12,1758159722,"~/scripts/log_rotation.sh"
 -'  37  12  ~/scripts/log_rotation.sh
@@ -185,104 +281,12 @@
 |4,39,33,12,1758159684,"~/scripts/log_rotation.sh"
 -'  42  12  ~/scripts/log_rotation.sh
 |4,39,42,12,1758159684,"~/scripts/log_rotation.sh"
--'  41  12  ~/scripts/log_rotation.sh
-|4,39,41,12,1758159684,"~/scripts/log_rotation.sh"
--'  35  12  ~/scripts/log_rotation.sh
-|4,39,35,12,1758159684,"~/scripts/log_rotation.sh"
--'  34  12  ~/scripts/log_rotation.sh
-|4,39,34,12,1758159684,"~/scripts/log_rotation.sh"
--'  41  12  ~/scripts/log_rotation.sh
-|4,39,41,12,1758159684,"~/scripts/log_rotation.sh"
--'  40  12  ~/scripts/log_rotation.sh
-|4,39,40,12,1758159684,"~/scripts/log_rotation.sh"
--'  34  12  ~/scripts/log_rotation.sh
-|4,39,34,12,1758159684,"~/scripts/log_rotation.sh"
--'  33  12  ~/scripts/log_rotation.sh
-|4,39,33,12,1758159684,"~/scripts/log_rotation.sh"
--'  34  12  ~/scripts/log_rotation.sh
-|4,39,34,12,1758159684,"~/scripts/log_rotation.sh"
--'  33  12  ~/scripts/log_rotation.sh
-|4,39,33,12,1758159684,"~/scripts/log_rotation.sh"
--'  41  12  ~/scripts/log_rotation.sh
-|4,39,41,12,1758159684,"~/scripts/log_rotation.sh"
--'  40  12  ~/scripts/log_rotation.sh
-|4,39,40,12,1758159684,"~/scripts/log_rotation.sh"
--'  34  12  ~/scripts/log_rotation.sh
-|4,39,34,12,1758159684,"~/scripts/log_rotation.sh"
--'  33  12  ~/scripts/log_rotation.sh
-|4,39,33,12,1758159684,"~/scripts/log_rotation.sh"
--'  34  12  ~/scripts/log_rotation.sh
-|4,39,34,12,1758159684,"~/scripts/log_rotation.sh"
--'  33  12  ~/scripts/log_rotation.sh
-|4,39,33,12,1758159684,"~/scripts/log_rotation.sh"
--'  49  0  ~/scripts/log_rotation.sh
-|4,39,49,0,1758159643,"~/scripts/log_rotation.sh"
--'  51  0  ~/scripts/log_rotation.sh
-|4,39,51,0,1758159643,"~/scripts/log_rotation.sh"
--'  48  0  ~/scripts/log_rotation.sh
-|4,39,48,0,1758159643,"~/scripts/log_rotation.sh"
--'  50  0  ~/scripts/log_rotation.sh
-|4,39,50,0,1758159643,"~/scripts/log_rotation.sh"
--'  42  0  ~/scripts/log_rotation.sh
-|4,39,42,0,1758159643,"~/scripts/log_rotation.sh"
--'  44  0  ~/scripts/log_rotation.sh
-|4,39,44,0,1758159643,"~/scripts/log_rotation.sh"
--'  43  0  ~/scripts/log_rotation.sh
-|4,39,43,0,1758159643,"~/scripts/log_rotation.sh"
--'  47  0  ~/scripts/log_rotation.sh
-|4,39,47,0,1758159643,"~/scripts/log_rotation.sh"
--'  50  0  ~/scripts/log_rotation.sh
-|4,39,50,0,1758159643,"~/scripts/log_rotation.sh"
--'  52  0  ~/scripts/log_rotation.sh
-|4,39,52,0,1758159643,"~/scripts/log_rotation.sh"
--'  49  0  ~/scripts/log_rotation.sh
-|4,39,49,0,1758159643,"~/scripts/log_rotation.sh"
--'  51  0  ~/scripts/log_rotation.sh
-|4,39,51,0,1758159643,"~/scripts/log_rotation.sh"
--'  43  0  ~/scripts/log_rotation.sh
-|4,39,43,0,1758159643,"~/scripts/log_rotation.sh"
--'  45  0  ~/scripts/log_rotation.sh
-|4,39,45,0,1758159643,"~/scripts/log_rotation.sh"
--'  44  0  ~/scripts/log_rotation.sh
-|4,39,44,0,1758159643,"~/scripts/log_rotation.sh"
--'  49  0  ~/scripts/log_rotation.sh
-|4,39,49,0,1758159643,"~/scripts/log_rotation.sh"
--'  51  0  ~/scripts/log_rotation.sh
-|4,39,51,0,1758159643,"~/scripts/log_rotation.sh"
--'  48  0  ~/scripts/log_rotation.sh
-|4,39,48,0,1758159643,"~/scripts/log_rotation.sh"
--'  50  0  ~/scripts/log_rotation.sh
-|4,39,50,0,1758159643,"~/scripts/log_rotation.sh"
--'  42  0  ~/scripts/log_rotation.sh
-|4,39,42,0,1758159643,"~/scripts/log_rotation.sh"
--'  44  0  ~/scripts/log_rotation.sh
-|4,39,44,0,1758159643,"~/scripts/log_rotation.sh"
--'  41  0  ~/scripts/log_rotation.sh
-|4,39,41,0,1758159643,"~/scripts/log_rotation.sh"
--'  43  0  ~/scripts/log_rotation.sh
-|4,39,43,0,1758159643,"~/scripts/log_rotation.sh"
--'  42  0  ~/scripts/log_rotation.sh
-|4,39,42,0,1758159643,"~/scripts/log_rotation.sh"
--'  44  0  ~/scripts/log_rotation.sh
-|4,39,44,0,1758159643,"~/scripts/log_rotation.sh"
--'  41  0  ~/scripts/log_rotation.sh
-|4,39,41,0,1758159643,"~/scripts/log_rotation.sh"
--'  43  0  ~/scripts/log_rotation.sh
-|4,39,43,0,1758159643,"~/scripts/log_rotation.sh"
--'  49  0  ~/scripts/log_rotation.sh
-|4,39,49,0,1758159643,"~/scripts/log_rotation.sh"
--'  51  0  ~/scripts/log_rotation.sh
-|4,39,51,0,1758159643,"~/scripts/log_rotation.sh"
--'  48  0  ~/scripts/log_rotation.sh
-|4,39,48,0,1758159643,"~/scripts/log_rotation.sh"
--'  50  0  ~/scripts/log_rotation.sh
-|4,39,50,0,1758159643,"~/scripts/log_rotation.sh"
--'  42  0  ~/scripts/log_rotation.sh
-|4,39,42,0,1758159643,"~/scripts/log_rotation.sh"
--'  44  0  ~/scripts/log_rotation.sh
-|4,39,44,0,1758159643,"~/scripts/log_rotation.sh"
 
 # History of marks within files (newest to oldest):
+
+> ~/.git/MERGE_MSG
+	*	1758165741	0
+	"	1	0
 
 > ~/scripts/log_rotation.sh
 	*	1758161509	0
